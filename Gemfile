@@ -47,3 +47,6 @@ end
 gem "twitter-bootstrap-rails"
 gem 'rails_12factor', group: :production
 gem 'responders', '~> 2.0'
+gem 'devise'
+gem 'cancancan'
+gem 'rolify'

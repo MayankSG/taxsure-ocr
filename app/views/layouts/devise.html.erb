@@ -6,13 +6,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
-    <div id="wrapper">
-      <%= render partial: 'layouts/left_bar' %>
-      <div id="page-wrapper" class="gray-bg dashbard-1">
-        <%= render partial: 'layouts/top_bar' %>
-        <%= yield %>
-      </div>
-    </div>
+  <body class="gray-bg">
+    <%= yield %>
   </body>
 </html>
