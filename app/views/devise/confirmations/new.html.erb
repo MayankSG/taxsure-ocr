@@ -1,16 +1,23 @@
-<h2>Resend confirmation instructions</h2>
-
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+<div class="text-center loginscreen animated fadeInDown">
+  <div>
+    <h1 class="logo-name">Taxsure</h1>
   </div>
+  <div class="middle-box">
+    <h3>Resend confirmation instructions</h3>
 
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
+    <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }, :class=>"m-t") do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="form-group">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), :class=>"form-control" %>
+      </div>
+
+      <%= f.submit "Resend confirmation instructions", :class => 'btn btn-sm btn-white btn-block' %>
+      <%= render "devise/shared/links" %>
+    <% end %>
+
   </div>
-<% end %>
+</div>
 
-<%= render "devise/shared/links" %>
+
