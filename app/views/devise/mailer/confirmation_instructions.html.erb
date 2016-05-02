@@ -144,19 +144,22 @@
 
       .btn-primary {
         text-decoration: none;
-        color: #FFF;
-        background-color: #1ab394;
-        border: solid #1ab394;
+        color: #FFFFFF;
+        background-color: #8ebb11;
+        border: medium none;
         border-width: 5px 10px;
         line-height: 2;
-        font-weight: bold;
         text-align: center;
         cursor: pointer;
         display: inline-block;
-        border-radius: 5px;
+        border-radius: 3px;
         text-transform: capitalize;
+        padding: 6px 12px;
+        font-size: 14px;
       }
-
+      .btn-primary:hover {
+        background: #719e00 none repeat scroll 0 0;  
+      }
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
@@ -283,11 +286,6 @@
                 <td class="content-wrap">
                   <table  cellpadding="0" cellspacing="0">
                     <tr>
-                      <td style="height: 145px; background: #138061; text-align: center; padding-top: 25px;">
-                        <%= image_tag("https://taxsure-ocr.herokuapp.com/logolg.png", :class =>"img-responsive") %>
-                      </td>
-                    </tr>
-                    <tr>
                       <td class="content-block">
                         Hi <%= @resource.try(:first_name).try(:capitalize) %>,
                       </td>
@@ -299,7 +297,7 @@
                     </tr>
                     <tr>
                       <td class="content-block aligncenter">
-                        <%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token), :class => "btn-primary" %>
+                        <%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token), :class => "btn-primary button-color" %>
                       </td>
                     </tr>
                     <tr>
