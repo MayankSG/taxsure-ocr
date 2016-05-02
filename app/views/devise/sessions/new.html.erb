@@ -10,12 +10,12 @@
       <%- end -%>
       <div class="form-group">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, :class=>"form-control" %>
+        <%= f.email_field :email, autofocus: true, :class => field_class(resource, :email) %>
       </div>
 
       <div class="form-group">
         <%= f.label :password %><br />
-        <%= f.password_field :password, autocomplete: "off", :class=>"form-control" %>
+        <%= f.password_field :password, autocomplete: "off", :class => field_class(resource, :password) %>
       </div>
 
       <% if devise_mapping.rememberable? -%>
@@ -25,7 +25,7 @@
         </div>
       <% end -%>
 
-      <%= f.submit "Log in", :class => 'btn btn-primary block full-width m-b' %>
+      <%= f.submit "Log in", :class => 'btn btn-primary block full-width m-b button-color' %>
       <%= render "devise/shared/links" %>
     <% end %>
   </div>

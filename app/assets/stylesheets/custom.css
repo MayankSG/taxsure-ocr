@@ -1,0 +1,21 @@
+ul{
+	list-style: none;
+	padding: 0;
+}
+.red-error-msg > li{
+	font-size: 14px;
+	color: red;
+}
+input.form-control.error{
+	border-style: solid;
+}
+.labal-inline .form-group div:first-child{
+	display: inline-block;
+}
+input[type="submit"].button-color{
+	background-color: #8EBB11; 
+	border: none;
+}
+input[type="submit"].button-color:hover{
+	background: #719e00;
+}

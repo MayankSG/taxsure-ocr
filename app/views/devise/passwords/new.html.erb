@@ -9,10 +9,10 @@
 
       <div class="form-group">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, :class=>"form-control" %>
+        <%= f.email_field :email, autofocus: true, :class => field_class(resource, :email) %>
       </div>
 
-      <%= f.submit "Send me reset password instructions", :class => 'btn btn-primary block full-width m-b' %>
+      <%= f.submit "Send me reset password instructions", :class => 'btn btn-primary block full-width m-b button-color' %>
       <%= render "devise/shared/links" %>
     <% end %>
   </div>
