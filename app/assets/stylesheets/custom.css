@@ -4,7 +4,7 @@ ul{
 }
 .red-error-msg > li{
 	font-size: 14px;
-	color: red;
+	color: #8ebb11;
 }
 input.form-control.error{
 	border-style: solid;
@@ -19,3 +19,4 @@ input[type="submit"].button-color{
 input[type="submit"].button-color:hover{
 	background: #719e00;
 }
+

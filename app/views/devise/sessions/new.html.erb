@@ -6,7 +6,7 @@
     <h3>Login</h3>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, id: "flash_#{name}", :style=>"color: red;"%>
+        <%= content_tag :div, msg, id: "flash_#{name}", :style=>"color: #8ebb11;"%>
       <%- end -%>
       <div class="form-group">
         <%= f.label :email %><br />
