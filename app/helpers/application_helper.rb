@@ -3,7 +3,7 @@ module ApplicationHelper
     if resource.errors.any?
       return "error form-control".html_safe if resource.errors[field_name]
     else
-      return "green-color form-control".html_safe
+      return "form-control".html_safe
     end
   end
 end
