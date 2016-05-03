@@ -15,8 +15,14 @@ input.form-control.error{
 input[type="submit"].button-color{
 	background-color: #8EBB11; 
 	border: none;
+	color: #fff;
 }
 input[type="submit"].button-color:hover{
 	background: #719e00;
 }
-
+input.form-control.green-color{
+	border-color: #8ebb11;
+}
+input.form-control.green-color:focus, input.form-control:focus{
+	border-color: #8ebb11 !important;
+}

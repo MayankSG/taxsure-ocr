@@ -2,7 +2,7 @@
   <div>
     <h1 class="logo-name">Taxsure</h1>
   </div>
-  <div class="middle-box">
+  <div class="middle-box labal-inline">
     <h3>Resend confirmation instructions</h3>
 
     <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }, :class=>"m-t") do |f| %>
@@ -13,7 +13,7 @@
         <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), :class=>"form-control" %>
       </div>
 
-      <%= f.submit "Resend confirmation instructions", :class => 'btn btn-sm btn-white btn-block' %>
+      <%= f.submit "Resend confirmation instructions", :class => 'btn btn-sm btn-white btn-block button-color' %>
       <%= render "devise/shared/links" %>
     <% end %>
 
